@@ -24,6 +24,19 @@ function updateTime() {
       "h:mm:ss [<small>]A[</small>]"
     );
   }
+
+  // Canberra
+  let canberraElement = document.querySelector("#canberra");
+  if (canberraElement) {
+    let canberraDateElement = canberraElement.querySelector(".date");
+    let canberraTimeElement = canberraElement.querySelector(".time");
+    let canberraTime = moment().tz("Australia/Canberra");
+
+    canberraDateElement.innerHTML = canberraTime.format("MMMM Do YYYY");
+    canberraTimeElement.innerHTML = canberraTime.format(
+      "h:mm:ss [<small>A</small]"
+    );
+  }
 }
 
 function updateCity(event) {
