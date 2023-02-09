@@ -3,13 +3,11 @@ function updateTime() {
   let kievElement = document.querySelector("#kiev");
   if (kievElement) {
     let kievDateElement = kievElement.querySelector(".date");
-    let kievTimeElement = canberraElement.querySelector(".time");
+    let kievTimeElement = kievElement.querySelector(".time");
     let kievTime = moment().tz("Europe/Kiev");
 
-    kievDateElement.innerHTML = canberraTime.format("MMMM Do YYYY");
-    kievTimeElement.innerHTML = canberraTime.format(
-      "h:mm:ss [<small>A</small>]"
-    );
+    kievDateElement.innerHTML = kievTime.format("MMMM Do YYYY");
+    kievTimeElement.innerHTML = kievTime.format("h:mm:ss [<small>A</small>]");
   }
 
   // Los Angeles

@@ -1,5 +1,10 @@
 body {
-  background-color: #f9f7fe;
+  background: linear-gradient(
+    93.1deg,
+    rgb(238, 254, 183) 19.1%,
+    rgb(169, 254, 222) 53.9%,
+    rgb(90, 222, 255) 92%
+  );
 }
 
 h1 {
@@ -15,6 +20,7 @@ h2 {
 
 select {
   display: block;
+  background: lightgoldenrodyellow;
   width: 100%;
   border-radius: 4px;
   font-size: 18px;
@@ -24,7 +30,12 @@ select {
 .container {
   max-width: 600px;
   margin: 60px auto;
-  background: white;
+  background: linear-gradient(
+    93.1deg,
+    rgb(238, 254, 183) 19.1%,
+    rgb(169, 254, 222) 53.9%,
+    rgb(90, 222, 255) 92%
+  );
   padding: 30px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 10px;
