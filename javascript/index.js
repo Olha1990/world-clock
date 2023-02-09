@@ -7,7 +7,7 @@ function updateTime() {
     let kievTime = moment().tz("Europe/Kiev");
 
     kievDateElement.innerHTML = kievTime.format("MMMM Do YYYY");
-    kievTimeElement.innerHTML = kievTime.format("h:mm:ss [<small>A</small>]");
+    kievTimeElement.innerHTML = kievTime.format("h:mm:ss [<small>]A[</small>]");
   }
 
   // Los Angeles
@@ -45,7 +45,7 @@ function updateTime() {
 
     canberraDateElement.innerHTML = canberraTime.format("MMMM Do YYYY");
     canberraTimeElement.innerHTML = canberraTime.format(
-      "h:mm:ss [<small>A</small>]"
+      "h:mm:ss [<small>]A[</small>]"
     );
   }
 }
