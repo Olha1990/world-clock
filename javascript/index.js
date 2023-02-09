@@ -1,4 +1,17 @@
 function updateTime() {
+  // Kiev
+  let kievElement = document.querySelector("#kiev");
+  if (kievElement) {
+    let kievDateElement = kievElement.querySelector(".date");
+    let kievTimeElement = canberraElement.querySelector(".time");
+    let kievTime = moment().tz("Europe/Kiev");
+
+    kievDateElement.innerHTML = canberraTime.format("MMMM Do YYYY");
+    kievTimeElement.innerHTML = canberraTime.format(
+      "h:mm:ss [<small>A</small>]"
+    );
+  }
+
   // Los Angeles
   let losAngelesElement = document.querySelector("#los-angeles");
   if (losAngelesElement) {
@@ -34,7 +47,7 @@ function updateTime() {
 
     canberraDateElement.innerHTML = canberraTime.format("MMMM Do YYYY");
     canberraTimeElement.innerHTML = canberraTime.format(
-      "h:mm:ss [<small>A</small]"
+      "h:mm:ss [<small>A</small>]"
     );
   }
 }
